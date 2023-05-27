@@ -167,9 +167,18 @@ impl eframe::App for App {
             });
         });
 
+
         
 
         egui::CentralPanel::default().show(ctx, |ui| {
+            ctx.input(|r|{
+                r.keys_down.iter().for_each(|k| {
+                    if let Some(c) = k.symbol_or_name().chars().next() {
+                        if letters.contains(&c) {
+                        clicked = Some(c);
+                    }}
+                });
+            });
             // The central panel the region left after adding TopPanel's and SidePanel's
             ui.vertical_centered(|ui| {
 
