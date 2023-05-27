@@ -1,6 +1,6 @@
 {
-  "name": "egui Template PWA",
-  "short_name": "egui-template-pwa",
+  "name": "Hangman Egui PWA",
+  "short_name": "hangman_egui-pwa",
   "icons": [
     {
       "src": "./icon-256.png",

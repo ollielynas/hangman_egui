@@ -1,9 +1,11 @@
-var cacheName = 'egui-template-pwa';
+
+
+var cacheName = "hangman_egui-pwa";
 var filesToCache = [
-  './',
-  './index.html',
-  './eframe_template.js',
-  './eframe_template_bg.wasm',
+  "./",
+  "./index.html",
+  "./hangman_egui.js",
+  "./hangman_egui_bg.wasm",
 ];
 
 /* Start the service worker and cache all of the app's content */
