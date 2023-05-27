@@ -86,7 +86,7 @@ impl App {
         // This is also where you can customize the look and feel of egui using
         // `cc.egui_ctx.set_visuals` and `cc.egui_ctx.set_fonts`.
         cc.egui_ctx.set_visuals(egui::Visuals::light());
-        cc.egui_ctx.set_pixels_per_point(cc.egui_ctx.pixels_per_point()*3.0);
+        cc.egui_ctx.set_pixels_per_point(cc.egui_ctx.pixels_per_point()*5.0);
         // Load previous app state (if any).
         // Note that you must enable the `persistence` feature for this to work.
         if let Some(storage) = cc.storage {
