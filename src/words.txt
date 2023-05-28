@@ -4651,7 +4651,6 @@ teary
 masse
 largo
 bazar
-pssst
 sylph
 toque
 fugit
@@ -4995,7 +4994,6 @@ limby
 jiffs
 treys
 bauds
-pffft
 mimer
 plebs
 caner
