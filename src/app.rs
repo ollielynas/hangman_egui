@@ -210,15 +210,8 @@ impl eframe::App for App {
                 if ui.button("Reset").clicked() {
                     reset = true;
                 }
-                if ui.small_button("-").clicked() {
-                    self.scale = ctx.pixels_per_point()* 0.9;
-                    ctx.set_pixels_per_point(self.scale);
-                }
-                if ui.small_button("+").clicked() {
-                    self.scale = ctx.pixels_per_point()* 1.1;
-                    ctx.set_pixels_per_point(self.scale);
-                }
-
+                
+                
                 ui.menu_button(language.to_string(), |ui| {
                     for i in [Language::English, Language::French, Language::German].iter() {
                         if ui.button(i.to_string()).clicked() {
@@ -227,13 +220,13 @@ impl eframe::App for App {
                         }
                     }
                 });
-
+                
             });
         });
-
-
-
-
+        
+        
+        
+        
         egui::CentralPanel::default().show(ctx, |ui| {
             ctx.input(|r|{
                 r.keys_down.iter().for_each(|k| {
@@ -309,8 +302,6 @@ impl eframe::App for App {
             self.current_word = d.current_word;
             self.guessed_letters =d.guessed_letters;
             self.remaining_letters = d.remaining_letters;
-            
-
         }
 
         if let Some(l) = update_language {
